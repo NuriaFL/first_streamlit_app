@@ -12,7 +12,7 @@ def get_fruityvice_data(this_fruit_choice): # use REQUESTS lib
     return fruityvice_normalized
 
 def get_fruit_load_list():
-    with my_cnx.cursor() ad my_cur:
+    with my_cnx.cursor() as my_cur:
         my_cur.execute("select * from fruit_load_list")
         return my_cur.fetchall()
 
