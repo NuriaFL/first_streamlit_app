@@ -35,4 +35,4 @@ streamlit.dataframe(fruityvice_normalized)
 
 #SNOWFLAKE
 import snowflake.connector
-
+streamlit.text('import snowflake')
